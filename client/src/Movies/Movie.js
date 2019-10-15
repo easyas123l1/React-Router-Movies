@@ -31,8 +31,6 @@ const Movie = (props) => {
   if (!movie) {
     return <div>Loading movie information...</div>;
   }
-
-  const { title, director, metascore, stars } = movie;
   return (
     <MovieCard movie={movie} saveMovie={saveMovie}/>
   );
