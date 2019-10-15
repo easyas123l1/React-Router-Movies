@@ -1,7 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const SavedList = props =>  (
+const SavedList = props =>  {
+console.log('working');
+return (
   <div className="saved-list">
     <h3>Saved Movies:</h3>
     {props.list.map(movie => (
@@ -14,6 +16,7 @@ const SavedList = props =>  (
       </NavLink>
   </div>
 );
+    }
 
 
 export default SavedList;

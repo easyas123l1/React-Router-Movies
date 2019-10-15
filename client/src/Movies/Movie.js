@@ -32,7 +32,10 @@ const Movie = (props) => {
     return <div>Loading movie information...</div>;
   }
   return (
-    <MovieCard movie={movie} saveMovie={saveMovie}/>
+    <div className='save-wrapper'>
+      <MovieCard movie={movie} saveMovie={saveMovie}/>
+      <div onClick={saveMovie} className="save-button">Save</div>
+    </div>
   );
 }
 
