@@ -1,6 +1,7 @@
 import React from 'react';
 
 const MovieCard = props => {
+
   return (
     <div className="save-wrapper">
     <div className="movie-card">
@@ -19,7 +20,7 @@ const MovieCard = props => {
         </div>
       ))}
     </div>
-    <div className="save-button">Save</div>
+    <div onClick={props.saveMovie} className="save-button">Save</div>
     </div>
   )
 };
